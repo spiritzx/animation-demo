@@ -1,0 +1,27 @@
+.moveTop-enter-active {
+  animation: MoveTop 0.8s cubic-bezier(0.29, 0.66, 0.64, 0.96);
+  position: absolute;
+  z-index: 1;
+}
+.moveTop-leave-active {
+  animation: MoveTopByHide 0.8s cubic-bezier(0.29, 0.66, 0.64, 0.96);
+  position: absolute;
+  z-index: 1;
+}
+
+@keyframes MoveTop {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes MoveTopByHide {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}

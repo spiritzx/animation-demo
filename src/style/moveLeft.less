@@ -1,0 +1,27 @@
+.moveLeft-enter-active {
+  animation: MoveLeft 0.8s cubic-bezier(0.29, 0.66, 0.64, 0.96);
+  position: absolute;
+  z-index: 1;
+}
+.moveLeft-leave-active {
+  animation: MoveLeftByHide 0.8s cubic-bezier(0.29, 0.66, 0.64, 0.96);
+  position: absolute;
+  z-index: 1;
+}
+
+@keyframes MoveLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes MoveLeftByHide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

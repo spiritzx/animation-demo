@@ -1,0 +1,39 @@
+.scaleDownAndUp-enter-active {
+  animation: ScaleDownAndUp 0.8s cubic-bezier(0.29, 0.66, 0.64, 0.96);
+  position: absolute;
+  z-index: 1;
+}
+.scaleDownAndUp-leave-active {
+  animation: ScaleDownAndUpByHide 0.8s cubic-bezier(0.29, 0.66, 0.64, 0.96);
+  position: absolute;
+  z-index: 2;
+}
+
+@keyframes ScaleDownAndUp {
+  0% {
+    transform: scale(0.7);
+    border-radius: 30px;
+  }
+  100% {
+    transform: scale(1);
+    border-radius: 0;
+  }
+}
+@keyframes ScaleDownAndUpByHide {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+    border-radius: 0px;
+  }
+  80% {
+    z-index: 0;
+    opacity: 0.8;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 0;
+    z-index: 0;
+    transform: scale(0.6);
+    border-radius: 30px;
+  }
+}

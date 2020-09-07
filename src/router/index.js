@@ -1,4 +1,11 @@
-import { createRouter, createWebHistory } from "vue-router";
+/*
+ * @Descripttion: router 配置
+ * @Author: tom-z(spirit108@foxmail.com)
+ * @Date: 2020-08-28 16:44:46
+ * @LastEditors: tom-z(spirit108@foxmail.com)
+ * @LastEditTime: 2020-09-07 10:18:38
+ */
+import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 import Home from "../views/Home.vue";
 
 const routes = [
@@ -8,13 +15,9 @@ const routes = [
     component: Home
   },
   {
-    path: "/about",
-    name: "About",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue")
+    path: "/cutover",
+    name: "Cutover",
+    component: () => import("../views/Cutover/Cutover.vue")
   }
 ];
 

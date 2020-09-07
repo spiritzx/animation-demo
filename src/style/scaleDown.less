@@ -1,0 +1,27 @@
+.scaleDown-enter-active {
+  animation: ScaleDown 0.8s cubic-bezier(0.29, 0.66, 0.64, 0.96);
+  position: absolute;
+  z-index: 1;
+}
+.scaleDown-leave-active {
+  animation: ScaleDownByHide 0.8s cubic-bezier(0.29, 0.66, 0.64, 0.96);
+  position: absolute;
+  z-index: 1;
+}
+
+@keyframes ScaleDown {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes ScaleDownByHide {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
