@@ -3,11 +3,11 @@
  * @Author: tom-z(spirit108@foxmail.com)
  * @Date: 2020-08-28 09:12:55
  * @LastEditors: tom-z(spirit108@foxmail.com)
- * @LastEditTime: 2020-09-07 15:47:05
+ * @LastEditTime: 2020-09-08 11:39:09
 -->
 <template>
   <div class="top-toggle">
-    <h1 class="page-title">{{ title }}</h1>
+    <h1 class="page-title" @click="navHome">{{ title }}</h1>
     <div class="btn-wrap">
       <div
         class="toggle-btn"
@@ -17,7 +17,7 @@
         @mouseleave="showMenu(-1)"
       >
         <p class="toggle-text">{{ item.title }}</p>
-        <transition name="moveDown">
+        <transition name="toggleBtn">
           <div class="pull-menu" v-show="i === pullActive">
             <ul class="menu-wrap">
               <li
@@ -83,6 +83,14 @@ export default {
           {
             title: "scaleDownAndUp",
             id: "2-4"
+          },
+          {
+            title: "scaleLine",
+            id: "2-5"
+          },
+          {
+            title: "scaleCircle",
+            id: "2-5"
           }
         ]
       },
@@ -103,12 +111,18 @@ export default {
       this.$emit("select-list-fn", e);
       this.pullActive = -1;
     }
+    function navHome() {
+      this.$router.replace({
+        path: "/"
+      });
+    }
     return {
       pullActive,
       toggleArr,
       title,
       showMenu,
-      selectListFn
+      selectListFn,
+      navHome
     };
   }
 };
@@ -151,11 +165,11 @@ export default {
     position: absolute;
     box-sizing: border-box;
     top: 50px;
-    left: -25px;
+    left: -30px;
     z-index: 2;
     background: #fff;
     padding: 16px 0;
-    width: 150px;
+    width: 160px;
     z-index: 1;
     border-radius: 4px;
     .menu-list {
@@ -170,5 +184,5 @@ export default {
     }
   }
 }
-@import url("../../../style/moveDown.less");
+@import url("../../../style/toggleBtn.less");
 </style>

@@ -3,7 +3,7 @@
  * @Author: tom-z(spirit108@foxmail.com)
  * @Date: 2020-08-21 16:32:12
  * @LastEditors: tom-z(spirit108@foxmail.com)
- * @LastEditTime: 2020-09-07 15:48:09
+ * @LastEditTime: 2020-09-08 10:52:46
 -->
 
 <template>
@@ -45,6 +45,8 @@ export default {
 @import url("../../style/scaleUp.less");
 @import url("../../style/scaleUpAndLeft.less");
 @import url("../../style/scaleDownAndUp.less");
+@import url("../../style/scaleLine.less");
+@import url("../../style/scaleCircle.less");
 @import url("../../style/slide.less");
 
 .about {

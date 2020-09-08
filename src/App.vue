@@ -3,14 +3,19 @@
  * @Author: tom-z(spirit108@foxmail.com)
  * @Date: 2020-08-28 16:44:45
  * @LastEditors: tom-z(spirit108@foxmail.com)
- * @LastEditTime: 2020-09-07 11:31:48
+ * @LastEditTime: 2020-09-08 11:38:33
 -->
 <template>
-  <router-view />
+  <router-view v-slot="{ Component }">
+    <transition name="scaleUp">
+      <component class="view" :is="Component" />
+    </transition>
+  </router-view>
 </template>
 
 <style lang="less">
 @import url("./style/reset.less");
+@import url("./style/scaleUp.less");
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -21,9 +26,10 @@
 }
 html,
 body {
-  background: #f8f8f8;
+  background: #999;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
   overflow-y: auto;
 }
 </style>
