@@ -3,7 +3,7 @@
  * @Author: tom-z(spirit108@foxmail.com)
  * @Date: 2020-08-28 16:44:45
  * @LastEditors: tom-z(spirit108@foxmail.com)
- * @LastEditTime: 2020-09-08 11:38:33
+ * @LastEditTime: 2020-09-08 14:36:41
 -->
 <template>
   <router-view v-slot="{ Component }">
@@ -23,6 +23,14 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  .view {
+    margin: 0;
+    width: 100%;
+    background: #fff;
+    min-height: 100vh;
+    box-sizing: border-box;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+  }
 }
 html,
 body {

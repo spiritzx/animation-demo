@@ -3,37 +3,40 @@
  * @Author: tom-z(spirit108@foxmail.com)
  * @Date: 2020-08-28 16:44:46
  * @LastEditors: tom-z(spirit108@foxmail.com)
- * @LastEditTime: 2020-09-08 11:21:25
+ * @LastEditTime: 2020-09-08 14:49:42
 -->
 <template>
   <div class="home">
     <h1 class="title">项目导航</h1>
     <ul class="nav-wrap">
-      <li>
-        <router-link to="/cutover">切换动画</router-link>
+      <li class="nav-item">
+        <router-link to="/cutover">1. 切换动画</router-link>
+      </li>
+      <li class="nav-item">
+        <router-link to="/hover">2. hover特效</router-link>
       </li>
     </ul>
   </div>
 </template>
 
 <style scoped lang="less">
-.home {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  background: #fff;
-  min-height: 100vh;
-  padding: 16px;
-  box-sizing: border-box;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
-}
-.title {
-  font-size: 36px;
-  font-weight: bold;
-}
+@import url("../style/common.less");
+
 .nav-wrap {
   list-style: none;
   text-align: left;
-  padding: 60px 30px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav-item {
+  width: 50%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  text-align: center;
 }
 </style>
