@@ -1,4 +1,11 @@
 <!--
+ * @Descripttion: 
+ * @Author: tom-z(spirit108@foxmail.com)
+ * @Date: 2020-09-09 16:34:46
+ * @LastEditors: tom-z(spirit108@foxmail.com)
+ * @LastEditTime: 2020-09-09 16:44:08
+-->
+<!--
  * @Descripttion:  hover 阴影
  * @Author: tom-z(spirit108@foxmail.com)
  * @Date: 2020-09-08 14:22:20
@@ -39,27 +46,21 @@ export default {
   color: #333;
   background: #f1f1f1;
 }
-.hover-shadow:hover .btn-content {
-  animation: Shadow 2s ease-in-out infinite;
-  color: #000;
-  animation-fill-mode: forwards;
-}
-
-.hover-shadow:hover::after {
+.btn-content::after {
+  width: 100%;
+  height: 2px;
+  background: #fff;
   position: absolute;
-  content: " ";
-  width: 80%;
-  height: 6px;
-  left: 10%;
-  bottom: -10px;
-  border-radius: 50%;
-  background-image: radial-gradient(
-    ellipse at center,
-    rgba(0, 0, 0, 0.35) 0%,
-    rgba(0, 0, 0, 0) 80%
-  );
-  animation: showShadow 2s infinite;
-  // box-shadow: 0px 1px 0px #333;
+  top: 0;
+  left: 0;
+}
+.btn-content::before {
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 @keyframes Shadow {
   0% {
