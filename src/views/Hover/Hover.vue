@@ -3,7 +3,7 @@
  * @Author: tom-z(spirit108@foxmail.com)
  * @Date: 2020-09-08 14:12:29
  * @LastEditors: tom-z(spirit108@foxmail.com)
- * @LastEditTime: 2020-09-09 16:20:50
+ * @LastEditTime: 2020-09-10 16:17:24
 -->
 <template>
   <div class="hover">
@@ -19,6 +19,7 @@
         <hover-arrow></hover-arrow>
         <HoverWobbleH></HoverWobbleH>
         <HoverWobbleV></HoverWobbleV>
+        <HoverBorderTB></HoverBorderTB>
       </div>
     </div>
   </div>
@@ -34,6 +35,7 @@ import HoverShake from "@/components/hover/HoverShake/HoverShake";
 import HoverShadow from "@/components/hover/HoverShadow/HoverShadow";
 import HoverCurls from "@/components/hover/HoverCurls/HoverCurls";
 import HoverArrow from "@/components/hover/HoverArrow/HoverArrow";
+import HoverBorderTB from "@/components/hover/HoverBorderTB/HoverBorderTB";
 
 export default {
   components: {
@@ -45,7 +47,8 @@ export default {
     HoverShake,
     HoverShadow,
     HoverCurls,
-    HoverArrow
+    HoverArrow,
+    HoverBorderTB
   }
 };
 </script>

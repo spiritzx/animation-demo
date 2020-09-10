@@ -3,7 +3,7 @@
  * @Author: tom-z(spirit108@foxmail.com)
  * @Date: 2020-09-09 16:34:46
  * @LastEditors: tom-z(spirit108@foxmail.com)
- * @LastEditTime: 2020-09-09 16:44:08
+ * @LastEditTime: 2020-09-10 11:43:35
 -->
 <!--
  * @Descripttion:  hover 阴影
@@ -13,7 +13,7 @@
  * @LastEditTime: 2020-09-09 15:29:42
 -->
 <template>
-  <a href="javascript:;" class="hover-shadow">
+  <a href="javascript:;" class="hover-border">
     <span class="btn-content">
       {{ text }}
     </span>
@@ -25,14 +25,14 @@ export default {
   props: {
     text: {
       type: String,
-      default: "shadow"
+      default: "borderTB"
     }
   }
 };
 </script>
 
-<style lang="less">
-.hover-shadow {
+<style lang="less" scoped>
+.hover-border {
   width: 150px;
   height: 40px;
   display: block;
@@ -46,21 +46,35 @@ export default {
   color: #333;
   background: #f1f1f1;
 }
+.btn-content:hover::after {
+  transform: scaleX(1);
+}
+.btn-content:hover::before {
+  transform: scaleX(1);
+}
 .btn-content::after {
+  content: " ";
   width: 100%;
   height: 2px;
-  background: #fff;
+  background: #008;
   position: absolute;
   top: 0;
   left: 0;
+  transform: scaleX(0);
+  transition-duration: 0.3s;
+  transition-property: transform;
 }
 .btn-content::before {
+  content: " ";
   width: 100%;
   height: 2px;
-  background: #fff;
+  background: #008;
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
+  transform: scaleX(0);
+  transition-duration: 0.3s;
+  transition-property: transform;
 }
 @keyframes Shadow {
   0% {
