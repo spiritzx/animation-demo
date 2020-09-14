@@ -3,7 +3,7 @@
  * @Author: tom-z(spirit108@foxmail.com)
  * @Date: 2020-08-28 16:44:46
  * @LastEditors: tom-z(spirit108@foxmail.com)
- * @LastEditTime: 2020-09-08 14:49:42
+ * @LastEditTime: 2020-09-14 11:26:48
 -->
 <template>
   <div class="home">
@@ -14,6 +14,9 @@
       </li>
       <li class="nav-item">
         <router-link to="/hover">2. hover特效</router-link>
+      </li>
+      <li class="nav-item">
+        <router-link to="/loading">3. loading特效</router-link>
       </li>
     </ul>
   </div>

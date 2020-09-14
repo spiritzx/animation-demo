@@ -3,7 +3,7 @@
  * @Author: tom-z(spirit108@foxmail.com)
  * @Date: 2020-09-08 14:12:29
  * @LastEditors: tom-z(spirit108@foxmail.com)
- * @LastEditTime: 2020-09-10 16:17:24
+ * @LastEditTime: 2020-09-14 10:20:01
 -->
 <template>
   <div class="hover">
@@ -17,6 +17,8 @@
         <hover-shadow></hover-shadow>
         <hover-curls></hover-curls>
         <hover-arrow></hover-arrow>
+        <hover-angle></hover-angle>
+        <hover-ripple></hover-ripple>
         <HoverWobbleH></HoverWobbleH>
         <HoverWobbleV></HoverWobbleV>
         <HoverBorderTB></HoverBorderTB>
@@ -36,6 +38,8 @@ import HoverShadow from "@/components/hover/HoverShadow/HoverShadow";
 import HoverCurls from "@/components/hover/HoverCurls/HoverCurls";
 import HoverArrow from "@/components/hover/HoverArrow/HoverArrow";
 import HoverBorderTB from "@/components/hover/HoverBorderTB/HoverBorderTB";
+import HoverAngle from "@/components/hover/HoverAngle/HoverAngle";
+import HoverRipple from "@/components/hover/HoverRipple/HoverRipple";
 
 export default {
   components: {
@@ -48,7 +52,9 @@ export default {
     HoverShadow,
     HoverCurls,
     HoverArrow,
-    HoverBorderTB
+    HoverBorderTB,
+    HoverAngle,
+    HoverRipple
   }
 };
 </script>
