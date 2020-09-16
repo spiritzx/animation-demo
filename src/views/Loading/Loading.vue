@@ -3,7 +3,7 @@
  * @Author: tom-z(spirit108@foxmail.com)
  * @Date: 2020-09-08 14:12:29
  * @LastEditors: tom-z(spirit108@foxmail.com)
- * @LastEditTime: 2020-09-14 16:56:18
+ * @LastEditTime: 2020-09-15 10:10:03
 -->
 <template>
   <div class="loading">
@@ -15,6 +15,8 @@
         <loading-matrix></loading-matrix>
         <loading-three></loading-three>
         <loading-music></loading-music>
+        <dot-line></dot-line>
+        <loading-eye></loading-eye>
       </div>
     </div>
   </div>
@@ -26,6 +28,8 @@ import LoadingDot from "@/components/Loading/LoadingDot";
 import LoadingMatrix from "@/components/Loading/LoadingMatrix";
 import LoadingThree from "@/components/Loading/LoadingThree";
 import LoadingMusic from "@/components/Loading/LoadingMusic";
+import DotLine from "@/components/Loading/DotLine";
+import LoadingEye from "@/components/Loading/LoadingEye";
 
 export default {
   components: {
@@ -33,7 +37,9 @@ export default {
     LoadingDot,
     LoadingMatrix,
     LoadingThree,
-    LoadingMusic
+    LoadingMusic,
+    DotLine,
+    LoadingEye
   }
 };
 </script>
