@@ -3,7 +3,7 @@
  * @Author: tom-z(spirit108@foxmail.com)
  * @Date: 2020-08-28 16:44:46
  * @LastEditors: tom-z(spirit108@foxmail.com)
- * @LastEditTime: 2020-09-14 11:26:48
+ * @LastEditTime: 2020-09-17 09:01:56
 -->
 <template>
   <div class="home">
@@ -40,6 +40,6 @@
   height: 40px;
   line-height: 40px;
   font-size: 16px;
-  text-align: center;
+  text-align: left;
 }
 </style>

@@ -3,7 +3,7 @@
  * @Author: tom-z(spirit108@foxmail.com)
  * @Date: 2020-09-08 14:12:29
  * @LastEditors: tom-z(spirit108@foxmail.com)
- * @LastEditTime: 2020-09-15 10:10:03
+ * @LastEditTime: 2020-09-17 10:37:56
 -->
 <template>
   <div class="loading">
@@ -17,6 +17,9 @@
         <loading-music></loading-music>
         <dot-line></dot-line>
         <loading-eye></loading-eye>
+        <loading-square></loading-square>
+        <loading-fan></loading-fan>
+        <loading-fish></loading-fish>
       </div>
     </div>
   </div>
@@ -30,6 +33,9 @@ import LoadingThree from "@/components/Loading/LoadingThree";
 import LoadingMusic from "@/components/Loading/LoadingMusic";
 import DotLine from "@/components/Loading/DotLine";
 import LoadingEye from "@/components/Loading/LoadingEye";
+import LoadingSquare from "@/components/Loading/LoadingSquare";
+import LoadingFan from "@/components/Loading/LoadingFan";
+import LoadingFish from "@/components/Loading/LoadingFish";
 
 export default {
   components: {
@@ -39,7 +45,10 @@ export default {
     LoadingThree,
     LoadingMusic,
     DotLine,
-    LoadingEye
+    LoadingEye,
+    LoadingSquare,
+    LoadingFan,
+    LoadingFish
   }
 };
 </script>
