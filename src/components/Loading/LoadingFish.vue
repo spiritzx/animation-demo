@@ -3,7 +3,7 @@
  * @Author: tom-z(spirit108@foxmail.com)
  * @Date: 2020-09-14 11:38:20
  * @LastEditors: tom-z(spirit108@foxmail.com)
- * @LastEditTime: 2020-09-17 11:01:50
+ * @LastEditTime: 2020-09-23 15:51:37
 -->
 <template>
   <div class="loadding-wrap">
@@ -124,9 +124,8 @@
   40% {
     transform: translate(-24px);
   }
-  70% {
+  85% {
     transform: translate(-24px);
-    opacity: 0;
   }
   99% {
     opacity: 0;
