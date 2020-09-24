@@ -3,13 +3,14 @@
  * @Author: tom-z(spirit108@foxmail.com)
  * @Date: 2020-09-14 11:38:20
  * @LastEditors: tom-z(spirit108@foxmail.com)
- * @LastEditTime: 2020-09-24 11:57:32
+ * @LastEditTime: 2020-09-24 11:55:53
 -->
 <template>
   <div class="loadding-wrap">
-    <div class="loading-water">
-      <div class="water-box">
-        <div class="water-cover"></div>
+    <div class="loading-watch">
+      <div class="watch-box">
+        <div class="watch-hour"></div>
+        <div class="watch-minute"></div>
       </div>
     </div>
   </div>
@@ -24,7 +25,7 @@
   align-items: center;
   justify-content: center;
 }
-.loading-water {
+.loading-watch {
   width: 80px;
   height: 80px;
   display: flex;
@@ -35,32 +36,40 @@
   padding: 2px;
   overflow: hidden;
 }
-.water-box {
+.watch-box {
   width: 76px;
   height: 76px;
-  background: rgb(47, 141, 204);
   border-radius: 50%;
   position: relative;
   overflow: hidden;
 }
-.water-cover {
-  width: 120px;
-  height: 120px;
-  position: absolute;
+.watch-hour {
+  height: 25px;
+  width: 4px;
   background: #fff;
-  border-radius: 40%;
-  bottom: 0px;
+  position: absolute;
   left: 50%;
-  margin-left: -60px;
-  animation: pullWater 5s ease-in infinite;
+  top: 50%;
+  transform-origin: 50% 0%;
+  animation: pointRotate 10s linear infinite;
+  margin-left: -2px;
 }
-@keyframes pullWater {
+.watch-minute {
+  height: 4px;
+  width: 50px;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-origin: 0% 50%;
+  animation: pointRotate 5s linear infinite;
+  margin-top: -2px;
+}
+@keyframes pointRotate {
   0% {
-    bottom: 0;
     transform: rotate(0deg);
   }
   100% {
-    bottom: 80px;
     transform: rotate(360deg);
   }
 }
