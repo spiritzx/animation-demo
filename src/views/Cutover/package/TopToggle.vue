@@ -3,7 +3,7 @@
  * @Author: tom-z(spirit108@foxmail.com)
  * @Date: 2020-08-28 09:12:55
  * @LastEditors: tom-z(spirit108@foxmail.com)
- * @LastEditTime: 2020-09-27 16:36:25
+ * @LastEditTime: 2020-09-27 17:01:15
 -->
 <template>
   <div class="top-toggle">
@@ -108,7 +108,6 @@ export default {
       this.pullActive = i;
     }
     function selectListFn(e) {
-      console.log(this);
       emit("select-list-fn", e);
       this.pullActive = -1;
     }
