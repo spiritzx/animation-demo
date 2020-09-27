@@ -3,7 +3,7 @@
  * @Author: tom-z(spirit108@foxmail.com)
  * @Date: 2020-08-28 16:44:46
  * @LastEditors: tom-z(spirit108@foxmail.com)
- * @LastEditTime: 2020-09-17 09:01:56
+ * @LastEditTime: 2020-09-27 15:29:38
 -->
 <template>
   <div class="home">
@@ -17,6 +17,12 @@
       </li>
       <li class="nav-item">
         <router-link to="/loading">3. loading特效</router-link>
+      </li>
+      <li class="nav-item">
+        <router-link to="/differential">4. 差速动画</router-link>
+      </li>
+      <li class="nav-item">
+        <router-link to="/crystalBall">5. 水晶球</router-link>
       </li>
     </ul>
   </div>

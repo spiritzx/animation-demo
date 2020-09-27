@@ -3,7 +3,7 @@
  * @Author: tom-z(spirit108@foxmail.com)
  * @Date: 2020-08-28 16:44:46
  * @LastEditors: tom-z(spirit108@foxmail.com)
- * @LastEditTime: 2020-09-14 11:26:26
+ * @LastEditTime: 2020-09-27 15:28:17
  */
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
@@ -28,6 +28,16 @@ const routes = [
     path: "/loading",
     name: "Loading",
     component: () => import("../views/Loading/Loading.vue")
+  },
+  {
+    path: "/differential",
+    name: "Differential",
+    component: () => import("../views/Differential/Differential.vue")
+  },
+  {
+    path: "/crystalBall",
+    name: "CrystalBall",
+    component: () => import("../views/CrystalBall/CrystalBall.vue")
   }
 ];
 

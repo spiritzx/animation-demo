@@ -3,7 +3,7 @@
  * @Author: tom-z(spirit108@foxmail.com)
  * @Date: 2020-08-21 16:32:12
  * @LastEditors: tom-z(spirit108@foxmail.com)
- * @LastEditTime: 2020-09-08 10:52:46
+ * @LastEditTime: 2020-09-27 15:41:25
 -->
 
 <template>
@@ -30,6 +30,7 @@ export default {
   },
   methods: {
     selectListFn(e) {
+      console.log(e);
       this.animationName = e;
       this.isMain = !this.isMain;
     }

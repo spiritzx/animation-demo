@@ -3,7 +3,7 @@
  * @Author: tom-z(spirit108@foxmail.com)
  * @Date: 2020-08-28 09:12:55
  * @LastEditors: tom-z(spirit108@foxmail.com)
- * @LastEditTime: 2020-09-08 11:39:09
+ * @LastEditTime: 2020-09-27 16:36:25
 -->
 <template>
   <div class="top-toggle">
@@ -40,7 +40,7 @@
 import { ref } from "vue";
 
 export default {
-  setup() {
+  setup(props, { emit }) {
     const pullActive = ref(-1);
     const title = ref("切换动画");
     const toggleArr = ref([
@@ -108,7 +108,8 @@ export default {
       this.pullActive = i;
     }
     function selectListFn(e) {
-      this.$emit("select-list-fn", e);
+      console.log(this);
+      emit("select-list-fn", e);
       this.pullActive = -1;
     }
     function navHome() {
