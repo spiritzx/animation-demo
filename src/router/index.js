@@ -3,7 +3,7 @@
  * @Author: tom-z(spirit108@foxmail.com)
  * @Date: 2020-08-28 16:44:46
  * @LastEditors: tom-z(spirit108@foxmail.com)
- * @LastEditTime: 2020-09-27 15:28:17
+ * @LastEditTime: 2021-02-02 22:37:53
  */
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
@@ -38,6 +38,11 @@ const routes = [
     path: "/crystalBall",
     name: "CrystalBall",
     component: () => import("../views/CrystalBall/CrystalBall.vue")
+  },
+  {
+    path: "/circle",
+    name: "画圆",
+    component: () => import("../views/circle/circle.vue")
   }
 ];
 

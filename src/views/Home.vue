@@ -3,7 +3,7 @@
  * @Author: tom-z(spirit108@foxmail.com)
  * @Date: 2020-08-28 16:44:46
  * @LastEditors: tom-z(spirit108@foxmail.com)
- * @LastEditTime: 2020-09-27 15:29:38
+ * @LastEditTime: 2021-02-02 22:49:59
 -->
 <template>
   <div class="home">
@@ -24,13 +24,14 @@
       <li class="nav-item">
         <router-link to="/crystalBall">5. 水晶球</router-link>
       </li>
+      <li class="nav-item">
+        <router-link to="/circle">5. 画圆</router-link>
+      </li>
     </ul>
   </div>
 </template>
 
 <style scoped lang="less">
-@import url("../style/common.less");
-
 .nav-wrap {
   list-style: none;
   text-align: left;

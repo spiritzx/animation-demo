@@ -3,7 +3,7 @@
  * @Author: tom-z(spirit108@foxmail.com)
  * @Date: 2020-08-28 16:44:45
  * @LastEditors: tom-z(spirit108@foxmail.com)
- * @LastEditTime: 2020-09-08 14:36:41
+ * @LastEditTime: 2021-02-02 22:48:30
 -->
 <template>
   <router-view v-slot="{ Component }">
@@ -15,8 +15,8 @@
 
 <style lang="less">
 @import url("./style/reset.less");
+@import url("./style/common.less");
 @import url("./style/scaleUp.less");
-
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

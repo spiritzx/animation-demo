@@ -365,7 +365,7 @@ export default {
   width: 100vw;
   // transform-style: preserve-3d;
   .img-bg {
-    background: url("../../assets/imgs/bg.png") no-repeat center;
+    background: #111;
     background-size: cover;
     position: relative;
     width: 100%;
