@@ -3,7 +3,7 @@
  * @Author: tom-z(spirit108@foxmail.com)
  * @Date: 2020-08-28 16:44:46
  * @LastEditors: tom-z(spirit108@foxmail.com)
- * @LastEditTime: 2021-02-02 22:49:59
+ * @LastEditTime: 2021-02-03 22:37:45
 -->
 <template>
   <div class="home">
@@ -25,7 +25,10 @@
         <router-link to="/crystalBall">5. 水晶球</router-link>
       </li>
       <li class="nav-item">
-        <router-link to="/circle">5. 画圆</router-link>
+        <router-link to="/circle">6. 画圆</router-link>
+      </li>
+      <li class="nav-item">
+        <router-link to="/mouseDistance">7. 鼠标与中心的距离</router-link>
       </li>
     </ul>
   </div>

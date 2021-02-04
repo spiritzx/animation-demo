@@ -3,7 +3,7 @@
  * @Author: tom-z(spirit108@foxmail.com)
  * @Date: 2020-08-28 16:44:46
  * @LastEditors: tom-z(spirit108@foxmail.com)
- * @LastEditTime: 2021-02-02 22:37:53
+ * @LastEditTime: 2021-02-03 22:36:34
  */
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
@@ -43,6 +43,11 @@ const routes = [
     path: "/circle",
     name: "画圆",
     component: () => import("../views/circle/circle.vue")
+  },
+  {
+    path: "/mouseDistance",
+    name: "计算鼠标与中心点的距离",
+    component: () => import("../views/MouseDistance/MouseDistance.vue")
   }
 ];
 
