@@ -3,7 +3,7 @@
  * @Author: tom-z(spirit108@foxmail.com)
  * @Date: 2020-08-28 16:44:46
  * @LastEditors: tom-z(spirit108@foxmail.com)
- * @LastEditTime: 2021-02-03 22:36:34
+ * @LastEditTime: 2021-02-04 21:08:23
  */
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
@@ -48,6 +48,11 @@ const routes = [
     path: "/mouseDistance",
     name: "计算鼠标与中心点的距离",
     component: () => import("../views/MouseDistance/MouseDistance.vue")
+  },
+  {
+    path: "/arrowRotate",
+    name: "箭头随着鼠标旋转",
+    component: () => import("../views/ArrowRotate/ArrowRotate.vue")
   }
 ];
 

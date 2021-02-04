@@ -3,7 +3,7 @@
  * @Author: tom-z(spirit108@foxmail.com)
  * @Date: 2020-08-28 16:44:46
  * @LastEditors: tom-z(spirit108@foxmail.com)
- * @LastEditTime: 2021-02-03 22:37:45
+ * @LastEditTime: 2021-02-04 21:09:18
 -->
 <template>
   <div class="home">
@@ -29,6 +29,9 @@
       </li>
       <li class="nav-item">
         <router-link to="/mouseDistance">7. 鼠标与中心的距离</router-link>
+      </li>
+      <li class="nav-item">
+        <router-link to="/arrowRotate">8. 箭头随着鼠标旋转</router-link>
       </li>
     </ul>
   </div>
