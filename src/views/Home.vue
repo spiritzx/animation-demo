@@ -3,7 +3,7 @@
  * @Author: tom-z(spirit108@foxmail.com)
  * @Date: 2020-08-28 16:44:46
  * @LastEditors: tom-z(spirit108@foxmail.com)
- * @LastEditTime: 2021-02-04 21:09:18
+ * @LastEditTime: 2021-04-08 20:08:04
 -->
 <template>
   <div class="home">
@@ -32,6 +32,9 @@
       </li>
       <li class="nav-item">
         <router-link to="/arrowRotate">8. 箭头随着鼠标旋转</router-link>
+      </li>
+      <li class="nav-item">
+        <router-link to="/threeJS-1">9. threeJS-1</router-link>
       </li>
     </ul>
   </div>

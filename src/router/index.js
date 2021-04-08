@@ -3,7 +3,7 @@
  * @Author: tom-z(spirit108@foxmail.com)
  * @Date: 2020-08-28 16:44:46
  * @LastEditors: tom-z(spirit108@foxmail.com)
- * @LastEditTime: 2021-02-04 21:08:23
+ * @LastEditTime: 2021-04-08 20:08:29
  */
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
@@ -53,6 +53,11 @@ const routes = [
     path: "/arrowRotate",
     name: "箭头随着鼠标旋转",
     component: () => import("../views/ArrowRotate/ArrowRotate.vue")
+  },
+  {
+    path: "/threeJS-1",
+    name: "threeJS",
+    component: () => import("../views/Three/ThreeOne.vue")
   }
 ];
 
