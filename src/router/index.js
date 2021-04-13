@@ -3,7 +3,7 @@
  * @Author: tom-z(spirit108@foxmail.com)
  * @Date: 2020-08-28 16:44:46
  * @LastEditors: tom-z(spirit108@foxmail.com)
- * @LastEditTime: 2021-04-08 20:08:29
+ * @LastEditTime: 2021-04-12 21:30:07
  */
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
@@ -58,6 +58,11 @@ const routes = [
     path: "/threeJS-1",
     name: "threeJS",
     component: () => import("../views/Three/ThreeOne.vue")
+  },
+  {
+    path: "/threeJS-2",
+    name: "threeJS",
+    component: () => import("../views/Three/ThreeTwo.vue")
   }
 ];
 
