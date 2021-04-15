@@ -3,7 +3,7 @@
  * @Author: tom-z(spirit108@foxmail.com)
  * @Date: 2020-08-28 16:44:46
  * @LastEditors: tom-z(spirit108@foxmail.com)
- * @LastEditTime: 2021-04-15 21:06:06
+ * @LastEditTime: 2021-04-15 22:36:52
  */
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
@@ -55,18 +55,18 @@ const routes = [
     component: () => import("../views/ArrowRotate/ArrowRotate.vue")
   },
   {
-    path: "/threeJS-1",
-    name: "threeJS",
+    path: "/3D-1",
+    name: "3D1",
     component: () => import("../views/3D/3D-1.vue")
   },
   {
-    path: "/threeJS-2",
-    name: "threeJS",
+    path: "/3D-2",
+    name: "3D2",
     component: () => import("../views/3D/3D-2.vue")
   },
   {
-    path: "/threeJS-3",
-    name: "threeJS",
+    path: "/3D-3",
+    name: "3D3",
     component: () => import("../views/3D/3D-3.vue")
   }
 ];
