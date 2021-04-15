@@ -3,7 +3,7 @@
  * @Author: tom-z(spirit108@foxmail.com)
  * @Date: 2020-08-28 16:44:46
  * @LastEditors: tom-z(spirit108@foxmail.com)
- * @LastEditTime: 2021-04-12 21:30:07
+ * @LastEditTime: 2021-04-15 21:06:06
  */
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
@@ -57,12 +57,17 @@ const routes = [
   {
     path: "/threeJS-1",
     name: "threeJS",
-    component: () => import("../views/Three/ThreeOne.vue")
+    component: () => import("../views/3D/3D-1.vue")
   },
   {
     path: "/threeJS-2",
     name: "threeJS",
-    component: () => import("../views/Three/ThreeTwo.vue")
+    component: () => import("../views/3D/3D-2.vue")
+  },
+  {
+    path: "/threeJS-3",
+    name: "threeJS",
+    component: () => import("../views/3D/3D-3.vue")
   }
 ];
 

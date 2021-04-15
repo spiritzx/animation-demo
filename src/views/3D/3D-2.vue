@@ -1,12 +1,14 @@
 <!--
- * @Descripttion: threejs-1
+ * @Descripttion: threejs-1 3d 物品
  * @Author: tom-z(spirit108@foxmail.com)
  * @Date: 2021-04-08 20:06:17
  * @LastEditors: tom-z(spirit108@foxmail.com)
- * @LastEditTime: 2021-04-08 21:59:18
+ * @LastEditTime: 2021-04-15 20:50:36
 -->
 <template>
-  <div class="three-wrap" id="3dWrap"></div>
+  <div class="three-wrap" id="3dWrap">
+    1
+  </div>
 </template>
 
 <script>
@@ -44,12 +46,12 @@ export default {
     camera.lookAt(scene.position); //设置相机方向(指向的场景对象)
 
     // 渲染
-    const box = document.getElementById("3dWrap");
-    const render = new three.WebGLRenderer();
-    render.setClearColor(0xb9d3ff, 1); //设置背景颜色
-    render.setSize(W, H);
-    box.appendChild(render.domElement);
-    render.render(scene, camera);
+    // const box = document.getElementById("3dWrap");
+    // const render = new three.WebGLRenderer();
+    // render.setClearColor(0xb9d3ff, 1); //设置背景颜色
+    // render.setSize(W, H);
+    // box.appendChild(render.domElement);
+    // render.render(scene, camera);
   }
 };
 </script>
