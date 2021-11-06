@@ -1,5 +1,5 @@
 <!--
- * @Descripttion: threeJs-two: 鼠标控制
+ * @Descripttion: threeJs-3: 鼠标控制
  * @Author: tom-z(spirit108@foxmail.com)
  * @Date: 2021-04-12 21:16:50
  * @LastEditors: tom-z(spirit108@foxmail.com)

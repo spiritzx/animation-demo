@@ -3,7 +3,7 @@
  * @Author: tom-z(spirit108@foxmail.com)
  * @Date: 2020-08-28 16:44:46
  * @LastEditors: tom-z(spirit108@foxmail.com)
- * @LastEditTime: 2021-04-15 22:32:02
+ * @LastEditTime: 2021-11-06 16:56:45
 -->
 <template>
   <div class="home">
@@ -41,6 +41,12 @@
       </li>
       <li class="nav-item">
         <router-link to="/3D-3">11. threeJS-3</router-link>
+      </li>
+      <li class="nav-item">
+        <router-link to="/3D-4">12. threeJS-4</router-link>
+      </li>
+      <li class="nav-item">
+        <router-link to="/3D-5">12. threeJS-5</router-link>
       </li>
     </ul>
   </div>

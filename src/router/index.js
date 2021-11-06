@@ -3,7 +3,7 @@
  * @Author: tom-z(spirit108@foxmail.com)
  * @Date: 2020-08-28 16:44:46
  * @LastEditors: tom-z(spirit108@foxmail.com)
- * @LastEditTime: 2021-04-15 22:36:52
+ * @LastEditTime: 2021-11-06 16:56:32
  */
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
@@ -68,6 +68,16 @@ const routes = [
     path: "/3D-3",
     name: "3D3",
     component: () => import("../views/3D/3D-3.vue")
+  },
+  {
+    path: "/3D-4",
+    name: "3D4",
+    component: () => import("../views/3D/3D-4.vue")
+  },
+  {
+    path: "/3D-5",
+    name: "3D5",
+    component: () => import("../views/3D/3D-5.vue")
   }
 ];
 
