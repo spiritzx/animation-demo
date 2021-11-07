@@ -3,7 +3,7 @@
  * @Author: tom-z(spirit108@foxmail.com)
  * @Date: 2021-04-12 21:16:50
  * @LastEditors: tom-z(spirit108@foxmail.com)
- * @LastEditTime: 2021-11-06 16:51:23
+ * @LastEditTime: 2021-11-07 11:39:32
 -->
 <template>
   <div class="three-wrap" id="3dWrap"></div>
@@ -80,6 +80,7 @@ export default {
       const mesh6 = new three.Mesh(sharp6, materia6);
       mesh6.translateY(120);
 
+      // 添加坐标系
       const axisHelper = new three.AxisHelper(250);
       scene.add(axisHelper);
 
