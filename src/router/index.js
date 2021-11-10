@@ -3,12 +3,12 @@
  * @Author: tom-z(spirit108@foxmail.com)
  * @Date: 2020-08-28 16:44:46
  * @LastEditors: tom-z(spirit108@foxmail.com)
- * @LastEditTime: 2021-11-07 18:11:35
+ * @LastEditTime: 2021-11-08 20:49:30
  */
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
 
-const routes = [
+let routes = [
   {
     path: "/",
     name: "Home",
@@ -53,38 +53,20 @@ const routes = [
     path: "/arrowRotate",
     name: "箭头随着鼠标旋转",
     component: () => import("../views/ArrowRotate/ArrowRotate.vue")
-  },
-  {
-    path: "/3D-1",
-    name: "3D1",
-    component: () => import("../views/3D/3D-1.vue")
-  },
-  {
-    path: "/3D-2",
-    name: "3D2",
-    component: () => import("../views/3D/3D-2.vue")
-  },
-  {
-    path: "/3D-3",
-    name: "3D3",
-    component: () => import("../views/3D/3D-3.vue")
-  },
-  {
-    path: "/3D-4",
-    name: "3D4",
-    component: () => import("../views/3D/3D-4.vue")
-  },
-  {
-    path: "/3D-5",
-    name: "3D5",
-    component: () => import("../views/3D/3D-5.vue")
-  },
-  {
-    path: "/3D-6",
-    name: "3D6",
-    component: () => import("../views/3D/3D-6.vue")
   }
 ];
+
+const three21Len = 7;
+const three21 = new Array(three21Len)
+  .fill(undefined, 0, three21Len)
+  .map((val, i) => {
+    return {
+      path: `/3D-${i}`,
+      name: `3D${i}`,
+      component: () => import(`../views/3D/21/3D-${i}.vue`)
+    };
+  });
+routes = routes.concat(three21);
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),

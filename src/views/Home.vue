@@ -3,15 +3,18 @@
  * @Author: tom-z(spirit108@foxmail.com)
  * @Date: 2020-08-28 16:44:46
  * @LastEditors: tom-z(spirit108@foxmail.com)
- * @LastEditTime: 2021-11-07 11:36:11
+ * @LastEditTime: 2021-11-08 21:59:36
 -->
 <template>
   <div class="home">
     <h1 class="title">项目导航</h1>
     <ul class="nav-wrap">
-      <li class="nav-item">
-        <router-link to="/cutover">1. 切换动画</router-link>
+      <li v-for="(item, i) in routes" :key="i">
+        <router-link :to="item.path">{{ i }}.{{ item.name }}</router-link>
       </li>
+      <!-- <li class="nav-item">
+        <router-link to="/cutover">1. 切换动画</router-link>
+      </li> -->
       <li class="nav-item">
         <router-link to="/hover">2. hover特效</router-link>
       </li>
@@ -54,6 +57,23 @@
     </ul>
   </div>
 </template>
+<script>
+import { reactive } from "vue";
+
+export default {
+  setup() {
+    const routes = reactive([
+      {
+        name: "切换动画",
+        path: "/cutover"
+      }
+    ]);
+    return {
+      routes
+    };
+  }
+};
+</script>
 
 <style scoped lang="less">
 .nav-wrap {

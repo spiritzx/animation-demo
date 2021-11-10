@@ -1,9 +1,9 @@
 <!--
- * @Descripttion: 顶点数据创建形体
+ * @Descripttion: 顶点数据创建形体和颜色
  * @Author: tom-z(spirit108@foxmail.com)
  * @Date: 2021-04-12 21:16:50
  * @LastEditors: tom-z(spirit108@foxmail.com)
- * @LastEditTime: 2021-11-07 17:57:25
+ * @LastEditTime: 2021-11-08 20:54:59
 -->
 <template>
   <div class="three-wrap" id="3dWrap"></div>
@@ -21,14 +21,8 @@ export default {
       camera: null
     };
   },
-  created() {
-    console.log(three);
-  },
   mounted() {
     this.initFn();
-    // (function animloop() {
-    //   window.requestAnimationFrame(animloop);
-    // })();
   },
   methods: {
     initFn() {
@@ -66,29 +60,6 @@ export default {
       // }); //材质对象
       //材质对象
 
-      var colors = new Float32Array([
-        1,
-        0,
-        0, //顶点1颜色
-        0,
-        1,
-        0, //顶点2颜色
-        0,
-        0,
-        1, //顶点3颜色
-
-        1,
-        1,
-        0, //顶点4颜色
-        0,
-        1,
-        1, //顶点5颜色
-        1,
-        0,
-        1 //顶点6颜色
-      ]);
-      // 设置几何体attributes属性的颜色color属性
-      box1.attributes.color = new three.BufferAttribute(colors, 3);
       var material = new three.PointsMaterial({
         // 使用顶点颜色数据渲染模型，不需要再定义color属性
         // color: 0xff0000,
@@ -102,20 +73,6 @@ export default {
       // 添加坐标系
       const axisHelper = new three.AxisHelper(250);
       scene.add(axisHelper);
-      /**
-       * 光源设置
-       */
-      //点光源
-      var point = new three.PointLight(0xffffff);
-      point.position.set(200, 200, 200); //点光源位置
-      scene.add(point); //点光源添加到场景中
-      //点光源2
-      var point1 = new three.PointLight(0xffffff);
-      point1.position.set(-200, -200, -200); //点光源位置
-      scene.add(point1); //点光源添加到场景中
-      //环境光
-      var ambient = new three.AmbientLight(0x004444);
-      scene.add(ambient);
 
       // 相机
       const W = window.innerWidth;
